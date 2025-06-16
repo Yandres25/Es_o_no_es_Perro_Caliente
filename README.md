@@ -1,7 +1,7 @@
 # Clasificador de ¿ Es Hot Dog ?
 Este proyecto implementa un sistema de clasificación binaria de imágenes para distinguir entre "Perros Calientes" y "No Perros Calientes" utilizando el conjunto de datos Food-101. Explora diferentes estrategias para manejar el desequilibrio de clases y mejorar el rendimiento del modelo, incluyendo el balanceo básico, la aumentación extensiva de datos y el ajuste fino de un modelo ResNet18 preentrenado.
 
- ##Características
+ ## Características
 - Manejo de Conjuntos de Datos Personalizados: Clases BinaryFoodDataset y AugmentedHotdogDataset para preparar conjuntos de datos balanceados y aumentados para la clasificación binaria.
 - Aumentación de Datos: Transformaciones de imagen completas que incluyen redimensionamiento, recortes aleatorios, volteos, rotaciones, ajuste de color (color jitter) y borrado aleatorio para mejorar la generalización del modelo.
 - Modelo CNN Personalizado: Una red neuronal convolucional simple (CNNBinary) para un rendimiento de referencia.
@@ -12,7 +12,7 @@ Este proyecto implementa un sistema de clasificación binaria de imágenes para 
 - Ajuste Fino de ResNet18: Aprovechando un modelo de aprendizaje profundo preentrenado con el conjunto de datos aumentado.
 - Métricas de Evaluación Detalladas: Proporciona precisión (accuracy), exactitud (precision), exhaustividad (recall), puntuación F1 (F1-score), verdaderos positivos (TP), verdaderos negativos (TN), falsos positivos (FP) y falsos negativos (FN) para cada experimento.
 
-##Experimentos
+## Experimentos
 El proyecto lleva a cabo tres experimentos comparativos:
 1. Balanceo Básico (750 Perros Calientes + 750 No Perros Calientes)
 - Objetivo: Establecer una línea de base utilizando un subconjunto pequeño y balanceado de los datos de entrenamiento de Food-101 (750 imágenes de perros calientes y 750 imágenes de no perros calientes).
@@ -33,8 +33,8 @@ El proyecto lleva a cabo tres experimentos comparativos:
 ##Resultados Esperados
 Observarás que a medida que la complejidad de la estrategia de entrenamiento aumenta (desde el balanceo básico hasta la aumentación de datos y el aprendizaje por transferencia), el rendimiento del modelo, particularmente la Precisión en el Test (Test Accuracy), debería mejorar significativamente. Se espera que el modelo ResNet18 Preentrenado produzca los mejores resultados debido a su capacidad para aprovechar las características aprendidas de un conjunto de datos masivo (ImageNet) y adaptarlas a la tarea de clasificación de perros calientes.
 
-##Contribuciones
+## Contribuciones
 Siéntete libre de bifurcar este repositorio, abrir problemas o enviar solicitudes de extracción. ¡Todas las contribuciones son bienvenidas!
 
-##Licencia
+## Licencia
 Este proyecto es de código abierto y está disponible bajo la Licencia MIT.
