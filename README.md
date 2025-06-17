@@ -30,7 +30,8 @@ El proyecto lleva a cabo tres experimentos comparativos:
 - Transformaciones: La misma aumentación agresiva que en el Experimento 2.
 Épocas: 7
 4. Adicional se realizó el mismo entrenamiento en otro archivo ipynb, pero con 25250 datos de Test (Para asemejar casos de la vida real).
-##Resultados Esperados
+  
+## Resultados Esperados
 Observarás que a medida que la complejidad de la estrategia de entrenamiento aumenta (desde el balanceo básico hasta la aumentación de datos y el aprendizaje por transferencia), el rendimiento del modelo, particularmente la Precisión en el Test (Test Accuracy), debería mejorar significativamente. Se espera que el modelo ResNet18 Preentrenado produzca los mejores resultados debido a su capacidad para aprovechar las características aprendidas de un conjunto de datos masivo (ImageNet) y adaptarlas a la tarea de clasificación de perros calientes.
 
 ## Contribuciones
